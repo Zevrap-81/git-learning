@@ -1,0 +1,55 @@
+#check git version
+git --version
+
+#initialise git in the current directory
+git init .
+
+#configure git
+git config --global user.name "username"
+git config --global user.email "email"
+git config --list
+
+#add files to be tracked by git(include into the staging area)
+git add filename
+
+#get the status
+git status
+
+#commit changes
+git commit "commit comment"
+git commit -am "commit comment"  #dont have to add tracked files to staging area
+
+#get the log of all commits so far
+git log
+
+#look into the details of a particular commit
+git show commitId
+
+#create a new branch
+git branch brachname
+
+#checkout the new branch (active branch)
+git checkout brachname
+
+git checkout -b brachname       #create and checkout the new brach
+
+#add a new repo from github
+git remote add origin "github repo ssh or http"
+
+#or clone an existing repo from github
+git clone "github repo ssh or http"
+
+#list all the remote origins
+git remote -v
+
+#push a branch to a remote origin (github)
+git push origin brachname
+
+#merge a branch into the parent branch
+git merge brachname
+
+#delete a branch
+git brach -d brachname
+
+
+
